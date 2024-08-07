@@ -73,7 +73,7 @@ header > nav > ul > li > a {
 
 header > nav > ul > li > a:hover,
 .user-btn:hover {
-    border-bottom: 4px solid #d2e5fa;
+    border-bottom: 4px solid var(--third-color);
 }
 
 .user-btn {
