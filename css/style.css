@@ -28,6 +28,8 @@ ul {
     list-style: none;
 }
 
+
+
 .container-nav {
     width: 100%;
     position: fixed;
@@ -37,7 +39,10 @@ ul {
 
 .container-main {
     padding-top: 100px;
+    padding-bottom: 300px;
 }
+
+
 
 /* Navigation bar */
 header {
@@ -192,4 +197,14 @@ height: 80%;
    position: absolute;
    right: 10px;
    bottom: 1px;
+}
+
+/* Footer */
+
+.container-footer{
+    width: 100%;
+    text-align: center;
+    background: var(--secondary-color);
+    height: 50px;
+    padding: 20px 0px;
 }
