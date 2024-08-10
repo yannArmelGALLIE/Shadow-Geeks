@@ -61,20 +61,19 @@ header {
     color: var(--third-color);
 }
 
-#icon, #icon-user, .toolTip1,
-.toolTip2, .toolTip3, 
-.toolTip4, .toolTip5 {
+#icon{
+    font-size: 14px;
     display: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+
 }
 
-
-.div1, .user-btn,
-.div2, .div3, .div4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+.active2 {
+   
 }
+
 header > .branding {
     padding-left: 10px;
 }
@@ -87,13 +86,13 @@ header > .branding:hover {
     display: flex;
 }
 
+.active {
+    border-bottom: 4px solid var(--third-color);
+}
+
 
 .nav-menu > li {
     padding: 0px 20px;
-}
-
-.tooltip {
-    display:none;
 }
 
 .nav-menu > li > a {
@@ -230,17 +229,13 @@ height: 80%;
         font-size: 9px;
     }
 
-    .nav-menu > li > a:hover,
-.user-btn:hover {
-    border-bottom:none;
-}
-
     .menu, .tooltip {
         display: none;
     }
 
     #icon, #icon-user {
-        display: block;
+        display: grid;
+        place-items: center;
     }
     
 
