@@ -1,8 +1,8 @@
 :root {
-    --primary-color:#000000;
+    --primary-color:#1b182b;
     --secondary-color:#0A0A45;
     --third-color:#1F51FF;
-    --text-color:#FFFFFF;
+    --text-color:hsl(0, 0%, 91%);
 }
 
 * {
@@ -57,7 +57,24 @@ header {
    padding: 20px 0;
    font-size: 13px;
 }
+.logo{
+    color: var(--third-color);
+}
 
+#icon, #icon-user, .toolTip1,
+.toolTip2, .toolTip3, 
+.toolTip4, .toolTip5 {
+    display: none;
+}
+
+
+.div1, .user-btn,
+.div2, .div3, .div4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
 header > .branding {
     padding-left: 10px;
 }
@@ -70,29 +87,23 @@ header > .branding:hover {
     display: flex;
 }
 
+
 .nav-menu > li {
-    padding: 0 10px;
+    padding: 0px 20px;
+}
+
+.tooltip {
+    display:none;
 }
 
 .nav-menu > li > a {
     padding-bottom: 2px;
+    position: relative;
 }
 
-.nav-menu > li > a:hover,
-.user-btn:hover {
-    border-bottom: 4px solid var(--third-color);
-}
 
 .user-btn {
     padding-right: 10px;
-}
-
-.menu-btn {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    z-index: 2;
-    display: none;
 }
 
 /* new-game section */
@@ -215,37 +226,27 @@ height: 80%;
 /* Media Query */
 
 @media (max-width: 700px) {
-    .menu-btn {
+    .branding {
+        font-size: 9px;
+    }
+
+    .nav-menu > li > a:hover,
+.user-btn:hover {
+    border-bottom:none;
+}
+
+    .menu, .tooltip {
+        display: none;
+    }
+
+    #icon, #icon-user {
         display: block;
-    }
-
-    .menu-btn:hover {
-        opacity: 0.6;
-    }
-
-    .user-btn {
-        margin-right: 70px;
     }
     
-    .nav-menu {
-        display: block;
-        position: absolute;
-       top: 0;
-       left: 0;
-        background: #363535;
-        width: 10%;
-        height: 2000px;
-        border-right: 1px solid #ccc;
-        opacity: 0.9;
-        padding: 100px;
-        transform: translate(-500px);
-        transition: transform 0.1s ease-in-out;
-        text-align: center;
-    }
 
     .nav-menu > li {
-        padding: 10px;
-        font-size: 14px;
+        padding: 20px;
+        font-size: 12px;
     } 
 
     .nav-menu.show {
