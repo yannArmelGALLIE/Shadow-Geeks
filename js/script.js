@@ -1,6 +1,6 @@
 const activePage = window.location.pathname;
 const navLinks1 = document.querySelectorAll('header a');
-const btn = document.querySelector('.btn')
+const btn_shop = document.querySelector('.btn_shop')
 
 navLinks1.forEach(link => {
     if(link.href.includes(`${activePage}`)) {
@@ -8,7 +8,7 @@ navLinks1.forEach(link => {
     }
 })
 
-btn.addEventListener('click', () => {
+btn_shop.addEventListener('click', () => {
     window.location.href= 'shop.html';
 })
  
