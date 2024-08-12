@@ -171,7 +171,7 @@ height: 80%;
     scale: 1.15;
 }
 
-.card_new-game > button,
+.card_new-game > a,
 .answer {
     color: var(--text-color);
     padding: 10px;
@@ -180,7 +180,7 @@ height: 80%;
     
 }
 
-.card_new-game > button:hover {
+.card_new-game > a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     transition: 0.5S all linear;
 }
@@ -337,7 +337,7 @@ img{
     transition: 0.3s all linear;
 }
 
-/* Trebding Section */
+/* Trending Section */
  .slide-title {
     border-bottom: none;
     padding-left: 0px;
@@ -393,6 +393,28 @@ img{
 
  .slide:hover {
     scale: 1.15;
+ }
+
+ /* Display Block For Deafault Scrool Bar */
+
+ html::-webkit-scrollbar {
+    display: none;
+ }
+
+ /* Custom Scroll Bar */
+ .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 300;
+    width: 100%;
+ }
+
+ .progress-bar {
+    height: 4px;
+    background: var(--third-color);
+    width: 0%;
  }
 
 
